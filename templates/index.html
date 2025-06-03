@@ -15,6 +15,9 @@
         <label for="deck_name">Deck Name:</label><br>
         <input type="text" id="deck_name" name="deck_name" value="{{ deck_name | default('') }}" required><br><br>
 
+        <label for="delimiter">Delimiter:</label><br>
+        <input type="text" id="delimiter" name="delimiter" value="{{ delimiter | default(',') }}" size="1" maxlength="1" required><br><br>
+
         <label for="csv_text">CSV Text:</label><br>
         <textarea id="csv_text" name="csv_text" rows="15" cols="80" required>{{ csv_text | default('') }}</textarea><br><br>
 
